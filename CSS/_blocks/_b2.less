@@ -1,0 +1,106 @@
+// main: ..//style.less
+
+.b2 {
+    padding: 90px 0;
+
+    .b2_wrapper {
+
+        .b2_desc {
+            margin-bottom: 60px;
+            width: 900px;
+
+            h2 {
+                font-size: 30px;
+                font-family: "GothamProBold";
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+        .b2_inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .b2_start {
+                h3 {
+                    text-transform: uppercase;
+                    margin-bottom: 30px;
+                    font-size: 28px;
+                }
+
+                img {
+                    width: 100%;
+                }
+
+                .b2_item {
+                    padding: 5px 0;
+                    display: flex;
+                    align-items: center;
+
+                    .b2_icon {
+                        margin-right: 10px;
+
+                        img {
+                            width: 18px;
+                        }
+                    }
+                }
+            }
+
+            .b2_end {
+                img {
+                    width: 100%;
+                    border-radius: 29px;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width:768px) {
+    .b2 {
+        .b2_wrapper {
+            .b2_desc {
+                width: auto;
+            }
+
+            .b2_inner {
+                flex-direction: column-reverse;
+
+                .b2_end {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width:425px) {
+    .b2 {
+        .b2_wrapper {
+            padding: 0 30px;
+
+            .b2_desc {
+                h2 {
+                    font-size: 24px;
+                }
+            }
+
+            .b2_inner {
+                .b2_end {
+                    img {
+                        border-radius: 1px;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,118 @@
+//main: ..//style.less
+
+.footer {
+    background: url(.././images/dest/headerbg.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 40px 0;
+
+    .footer_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+            font-size: 68px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-family: "GothamProBlack";
+        }
+
+        .footer_desc {
+            width: 400px;
+            margin: 30px auto;
+
+            h3 {
+                font-size: 26px;
+                font-family: "GothamProBold";
+            }
+        }
+
+        .footer_contrary {
+            display: flex;
+            flex-direction: column;
+            font-family: "GothamProBlack";
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 50px;
+
+            h4 {
+                font-size: 17px;
+            }
+        }
+
+        .footer_end {
+            position: relative;
+            width: 500px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+
+}
+
+@media screen and(max-width:1024px) {
+    .footer {
+        .footer_wrapper {
+            .footer_end {
+                width: auto;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:966px) {
+
+    .footer {
+        background: url('/FLEX/images/dest/headerbgmedia.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        .footer_wrapper {
+            flex-direction: column-reverse;
+            width: 400px;
+            margin: 0 auto;
+
+            .footer_end {
+                margin-bottom: 50px;
+            }
+
+        }
+    }
+}
+
+@media screen and(max-width:425px) {
+
+    .footer {
+        .footer_wrapper {
+            padding: 0 10px;
+
+            .footer_desc {
+                width: 300px;
+            }
+        }
+
+        .footer_bottom {
+            margin: 70px auto auto auto;
+            width: 140px;
+
+        }
+    }
+
+}
+
+@media screen and(max-width:375px) {
+    .footer {
+        .footer_wrapper {
+            width: auto;
+
+            h4 {
+                font-size: 16px;
+            }
+        }
+    }
+}
