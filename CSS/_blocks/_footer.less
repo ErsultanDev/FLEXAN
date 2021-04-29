@@ -1,9 +1,9 @@
 //main: ..//style.less
-
 .footer {
     background: url(.././images/dest/headerbg.jpg);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
+    background-size: cover;
     padding: 40px 0;
 
     .footer_wrapper {
@@ -20,11 +20,11 @@
         }
 
         .footer_desc {
-            width: 400px;
+            width: 300px;
             margin: 30px auto;
 
             h3 {
-                font-size: 26px;
+                font-size: 17px;
                 font-family: "GothamProBold";
             }
         }
@@ -51,8 +51,6 @@
             }
         }
     }
-
-
 }
 
 @media screen and(max-width:1024px) {
@@ -66,12 +64,12 @@
 }
 
 @media screen and(max-width:966px) {
-
     .footer {
-        background: url('/FLEX/images/dest/headerbgmedia.png');
+        background: url(.././images/dest/headerbgmedia.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        padding: 0;
         .footer_wrapper {
             flex-direction: column-reverse;
             width: 400px;
@@ -80,29 +78,35 @@
             .footer_end {
                 margin-bottom: 50px;
             }
-
         }
     }
 }
 
 @media screen and(max-width:425px) {
-
     .footer {
+
+
         .footer_wrapper {
             padding: 0 10px;
 
+            .footer_contrary {
+                margin-bottom: 30px;
+            }
+
             .footer_desc {
                 width: 300px;
+            }
+
+            .footer_end {
+                width: 200px;
             }
         }
 
         .footer_bottom {
             margin: 70px auto auto auto;
             width: 140px;
-
         }
     }
-
 }
 
 @media screen and(max-width:375px) {

@@ -2,7 +2,8 @@
 .header {
     background: url(.././images/dest/headerbg.jpg);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
+    background-size: cover;
     padding: 40px 0;
 
     h2 {
@@ -47,7 +48,6 @@
                     }
                 }
 
-
                 p {
                     font-family: "GothamProMedium";
                     font-size: 18px;
@@ -74,11 +74,12 @@
 
 @media screen and (max-width:966px) {
     .header {
-        background: url('/FLEX/images/dest/headerbgmedia.png');
+        background: url(.././images/dest/headerbgmedia.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        padding:0;
+        padding: 0;
+
         h4 {
             display: none;
         }
@@ -106,7 +107,6 @@
             }
         }
     }
-
 }
 
 @media screen and (max-width:425px) {
@@ -125,6 +125,7 @@
                 .header_item {
                     p {
                         font-size: 15px;
+                        line-height: 19px;
                     }
 
                     .header_icon {
@@ -134,8 +135,10 @@
                     }
                 }
             }
-            .header_end{
-                width: 230px;
+
+            .header_end {
+                width: 200px;
+                margin-top: 0;
             }
         }
     }
@@ -146,10 +149,6 @@
         .header_wrapper {
             width: auto;
             padding: 0 10px;
-
-            .header_end {
-                width: auto;
-            }
         }
     }
 }

@@ -1,18 +1,15 @@
 //main: ..//style.less
 .b3 {
     padding: 90px 0;
-
     .b3_natural-pic {
         position: absolute;
         top: -130px;
         right: 0;
         width: 230px;
-
         img {
             width: 100%;
         }
     }
-
     p {
         font-size: 17px;
     }
@@ -26,14 +23,11 @@
             font-family: "GothamProBlack";
             font-size: 30px;
         }
-
         .b3_inner {
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
-
             margin: 60px 0;
-
             .b3_img {
                 width: 230px;
                 margin: 0 auto;
@@ -70,38 +64,30 @@
         }
     }
 }
-
-
 @media screen and(max-width:768px) {
     .b3 {
         text-align: left;
-
         .b3_natural-pic {
             width: 160px;
         }
-
         .b3_wrapper {
             .b3_inner {
                 flex-direction: column;
                 width: 400px;
                 margin: 0 auto;
-
                 .b3_item {
                     width: 100%;
                     margin-bottom: 30px;
                     display: flex;
                     align-items: center;
-
                     h3 {
                         font-size: 20px;
                     }
-
                     .b3_img {
                         margin-right: 20px;
 
                         img {
                             width: 130px;
-                            border-radius: 50%;
                         }
                     }
                 }
@@ -113,7 +99,9 @@
 @media (max-width:425px) {
     .b3 {
         padding: 30px 0;
-
+        p{
+            font-size: 14px;
+        }
         .b3_wrapper {
             .b3_title {
                 display: none;
